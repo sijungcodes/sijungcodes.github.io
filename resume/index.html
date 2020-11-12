@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+<style>
+@keyframes bounce {
+  60%, 80%, to { 
+    transform: translateY(400px); 
+    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+  70% { transform: translateY(300px); }
+  90% { transform: translateY(360px); }
+}
+@keyframes roll {
+  from { 
+    transform: translateY(400px) rotate(0deg);
+  }
+  to { 
+    transform: translate(600px, 400px) rotate(359deg);
+
+  }
+
+}
+
+
+
+
+
+.ball {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  background: rgb(255,140,105);
+  background: radial-gradient(at 30% 30%,  rgba(251,199,199,1), rgba(255,140,105,1));
+
+  border-radius: 50%;
+  margin: 0 auto 0 25px;
+  
+  animation: bounce 2s cubic-bezier(.755, .05, .855, .06) forwards,
+             roll 3s 2.05s ease forwards;
+}
+
+
+	html {
+	  height: 100%;
+	}
+	body {
+	  min-height: 100%;
+	}
+
+	nav a{
+		color: black;
+		text-decoration: none;
+		display: block;
+	}
+
+
+	.bg-my-pink{
+		background: rgb(249,239,231);
+	}
+
+	.bg-my-hot-pink{
+		background: rgb(255,231,221);
+	}
+
+	.bg-my-brown{
+		background-color: rgb(164,144,93);
+	}
+
+	.bg-my-red{
+		background-color: rgb(255,140,105);
+	}
+
+	.bg-my-grey{
+		background-color: rgb(249,249,250);
+	}
+    code{
+		color: darkblue;
+		margin-right: 5px;
+		text-transform: capitalize;   	
+		text-decoration: underline;
+		margin-left: 6px;
+    }
+</style>
+<body class="helvetica " style="height: 100%" >
+	<section class="cf" style="height: 100%">
+		<div class="fl w-100 w-50-m w-25-l  lh-copy	 tr pa4 ">
+			<nav>
+			<p class=""><a href="/">SIJUNG LAI</a></p>
+			<a href="/">About</a> 
+			<a href="/projects">Projects</a> 
+			<a class="dn" href="/micro">Microblog</a> 
+			<a href="/resume">CV</a>
+			</nav>
+		</div>
+
+
+<div class="fl w-100 w-50-m w-75-l pa4 lh-copy" style="max-width: 900px">
+<p>
+<h1>CV</h1>
+<b>Sijung Lai</b><br>
+sijung.nagano@outlook.com<br>
+</p>
+<div class="dt-ns dt--fixed-ns">
+  <div class="dtc-ns   pv4  ">
+	<b>Skills</b><br> 
+	<p>Node js, express, javascript, <br> Tensorflow, jQuery, react js,<br>Ajax,  php, laravel, mqsql, <br> HTML5, css,  boostrap,<br> lamp, REST Api, git</p>
+  </div>
+  <div class="dtc-ns   pv4  ">
+	<b>Langauges</b><br>
+	<p>English fluent,<br> Chinese fluent,<br> Dutch fluent,<br> Japanese conversational</p>
+
+  </div>
+  <div class="dtc-ns   pv4  ">
+	<b>Education</b><br>
+	<p>University of California,<br> Santa Barbara, U.S.A.<br>
+	B.A. in Business Economics,<br>
+	B.A. in Chemistry</p> 	
+  </div>
+</div>
+ <div class="pb4 ">
+	<h3>Investment Manager |  Shiga L.L.C., Japan, 2018 to present</h3>
+	<p>Asides from managing various cryptocurrency portfolios, below is a list of software created for Shigajuki:</p>
+	<p> - Price volatility alert system that monitors cryptocurrency prices and sends email alerts when volatility reaches a threshold. Machine learning techniques are used to determine volatility threshold.<br> <code>Node js</code><code>Express js</code><code>Tensorflow </code><code>ml.js </code><code>Gmail api</code> </p>
+	<p> - Cli cryptocurreby tax calculator that parses transactions on the Bitcoin blockchain, pulls exchange rates from exchanges, and turns said data into an easy to process csv format. <br><code>Node js</code>  
+	</p> 
+	<p> 
+	- Website that lets users test algorithmic trading strategies, search candlestick parterns, and find best fit quadratic function of a dataset. <br><code>express</code><code>React js</code><code>Ml.js</code><code>CSS</code><code> chart.js</code>   
+	</p> 
+</div>
+<div class="pb4">
+<h3>Product Manager and Programmer |  Wordcorp,  Taiwan (R.O.C), 2009 to 2016</h3>
+<p>At <u><a href="https://www.wordcorp.net/en/">Worcorp.net</a></u>, an online language services provider, I led a dev team in creating a translation project quotation and distribution system, as well as conducted social media and marketing campaigns (Facebook Ads, Mail Chimp, and Google Adsense).</p>
+<p>
+
+The aforementioned system lets clients upload translation projects to Wordcorp's system for automatic price inquiries. Confirmed projects are distributed via email to qualified translators. Some features that I wrote for this system include:</p>
+<p>- Google Drive and Gmail services integration into Wordcorp's online platform.<br> <code>google apis</code><code>Php Laravel</code><code>Lamp</code></p>
+
+<p>- Web based quotation widget that lets users upload documents, choose services, and obtain project prices.<br><code>Javascript</code><code>React js</code><code>HTML</code><code>CSS</code></p>
+<p>- Online payment system that connects to <a href="https://www.opay.tw">https://www.opay.tw</a>'s payment service.<br> <code>Php</code><code>Mysql</code><code>Opay Api</code></p>
+<p>
+- Repeating phrase system that calculates the Levinstein distance between phrases to determine phrase similarity.<br><code>React js</code><code>HTML</code><code>CSS</code></p>
+</div>	
+<div class="pb4">
+	<h3>Research Analyst |  Equilar, U.S.A, 2007 to 2008</h3>
+	<p>- Analysted Form 10-K, Form DEF 14A, and proxy statements filed by S&P 500 and Russel 3000 companies, and compiled such data into Equilar's products used by compensation committees, compensation consultants, and media outlets, such as The New York Times.</p>
+	<p>
+		- Compiled data on change-in-control policies for The New York Times' annual CEO pay rank report.
+	</p>
+	<p>
+		- Managed and trained interns at Equilar's Berkley office.
+	</p>
+	<p>
+- Queried Mysql database and compiled data for custom request projects.
+	</p>
+	</div>
+</div>	
+
+
+
+
+
+
+
+</section>
+
+ 

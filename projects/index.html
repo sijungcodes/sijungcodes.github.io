@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+<style>
+@keyframes bounce {
+  60%, 80%, to { 
+    transform: translateY(400px); 
+    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+  70% { transform: translateY(300px); }
+  90% { transform: translateY(360px); }
+}
+@keyframes roll {
+  from { 
+    transform: translateY(400px) rotate(0deg);
+  }
+  to { 
+    transform: translate(600px, 400px) rotate(359deg);
+
+  }
+
+}
+
+
+
+
+
+.ball {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  background: rgb(255,140,105);
+  background: radial-gradient(at 30% 30%,  rgba(251,199,199,1), rgba(255,140,105,1));
+
+  border-radius: 50%;
+  margin: 0 auto 0 25px;
+  
+  animation: bounce 2s cubic-bezier(.755, .05, .855, .06) forwards,
+             roll 3s 2.05s ease forwards;
+}
+
+
+	html {
+	  height: 100%;
+	}
+	body {
+	  min-height: 100%;
+	}
+
+	nav a{
+		color: black;
+		text-decoration: none;
+		display: block;
+	}
+
+
+	.bg-my-pink{
+		background: rgb(249,239,231);
+	}
+
+	.bg-my-hot-pink{
+		background: rgb(255,231,221);
+	}
+
+	.bg-my-brown{
+		background-color: rgb(164,144,93);
+	}
+
+	.bg-my-red{
+		background-color: rgb(255,140,105);
+	}
+
+	.bg-my-grey{
+		background-color: rgb(249,249,250);
+	}
+    code{
+		color: darkblue;
+		margin-right: 5px;
+		text-transform: capitalize;   	
+		text-decoration: underline;
+		margin-left: 6px;
+    }
+</style>
+<body class="helvetica " style="height: 100%" >
+	<section class="cf" style="height: 100%">
+		<div class="fl w-100 w-50-m w-25-l  lh-copy	 tr pa4 ">
+			<nav>
+			<p class=""><a href="/">SIJUNG LAI</a></p>
+			<a href="/">About</a> 
+			<a href="/projects">Projects</a> 
+			<a class="dn" href="/micro">Microblog</a> 
+			<a href="/resume">CV</a>
+			</nav>
+		</div>
+
+
+  <div  class="fl w-100 w-50-m w-75-l pa4 bg-my-grey lh-copy "  >
+  		<h1>Projects</h1>
+  		<p>Here are some of my works:</p>
+  		<div>
+	  		<div class="db measure "> 
+
+	  			<h3>Market candlestick search engine</h3>
+
+				<img src="/images/crypto-project.png" >
+				<p>Price volatility alert system that monitors cryptocurrency prices and sends email alerts when volatility reaches a threshold. Machine learning techniques are used to determine volatility threshold. 
+
+
+				Market candle stick search engine. I used various machine learning technqiues to compare price patterns.
+				Ml.js was used for machine learning library.  An express server links to various exchange api end points.  The front-end uses React js and Apex charts. 
+				</p>
+				<a class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">React js</a>
+				<a class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
+				TensorFlow</a>
+				<a class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
+				Express</a>
+				 
+			</div>
+	  		<div class="db measure  "> 
+	  			<h3>Multi-step order system</h3>
+				
+				
+				<img src="/images/wordcorp_2.png" >
+				<p>
+				Web based quotation widget that lets users upload documents, choose services, and obtain project prices.
+				</p>
+				<a class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
+				React js</a>
+				<a class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
+				Gmail Api</a>
+				<a class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
+				Laravel</a>
+			</div>			
+	  	
+
+	  		<div class="db measure  "> 
+	  			<h3>Word count tool</h3>
+				
+				<p>
+				<img src="/images/wordman.png" >
+				Web based quotation widget that lets users upload documents, choose services, and obtain project prices.
+				</p>
+				<a class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
+				React js</a>
+				<a class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
+				Laravel</a>
+			</div>	
+	 
+	  		 	
+		</div>			
+  	
+  </div>
+
+</section>
+</body>
+</html>
