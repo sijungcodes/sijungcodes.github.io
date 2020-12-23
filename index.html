@@ -1,126 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
-<style>
-@keyframes bounce {
-  60%, 80%, to { 
-    transform: translateY(400px); 
-    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
-  }
-  70% { transform: translateY(300px); }
-  90% { transform: translateY(360px); }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <title>home</title>
+    <style>
+        body{max-width: 1600px; margin: auto; fodnt-size: 15px;
+        }
+        body, #right {
+            height: 100%;
+            overflow-wrap: break-word;
+        }
+
+        a{
+            color: black;
+            border-bottom: 1px solid #808000;
+            text-decoration: none;
+        }
+
+        h1,h2,h3,h4, b{
+            1color: rgb(17,133,22);
+        }
+
+        #links a{
+            text-decoration: none;
+            text-transform: lowercase;
+            color: black;
+            font-weight: 800;
+            border-bottom: 0px solid red;
+        }
+
+        a:hover, #links a:hover{
+            color: #b8860b;
+
+        }
+        #contendt{font-family: "Source Serif Pro",TimesNewRoman,Times New Roman,Times,serif}
+    </style>  
+</head>
+<html>
+    <body class="">
+        <main class="cf lh-copy">
+            <div class="fl w-100 w-20-l sans-serif  pv4 ph3">
+                <b class="db pv2 bt bw2 ttu">Sijung Lai <br> シオン ライ</b>
+                <div class="pt6-l pt2 pb2 bb black-50">web programmer you can trust</div>
+                <div id="links" class="pt2 ">
+                    <a id="home" class="  fl w-25 db pv2 w-100-l" href="/">home</a> 
+                    <a id="blog" class="fl w-25  db pv2 w-100-l" href="/blog">blog</a> 
+                    <a id="map" class="fl w-25  db pv2 w-100-l" href="/map">map</a> 
+                    <a id="contact" class="fl  w-25 db pv2 w-100-l" href="/contact">contact</a>  
+                </div>
+            </div>
+            <div id="right" class="fl w-100 w-80-l bg-black-05  pv4 ph3 sans-serif" >
+                <div id="content">
+                    
+ 
+                        <article class="pa4-l center w-80-l w-100" >
+                            <b class=" db   f1-l  f2 pb6-l pv4 lh-title ">
+                                Hi, I'm Sijung, a web programmer living in Hakuba, Japan.
+                            </b>                     
+                             <style>
+img {
+  -webkit-filter: acontrast(66500%);
+  filter: acontrast(66500%);
 }
-@keyframes roll {
-  from { 
-    transform: translateY(400px) rotate(0deg);
-  }
-  to { 
-    transform: translate(600px, 400px) rotate(359deg);
 
-  }
+ 
 
-}
+ </style>
+<div id="me" class="measdure-wide">
+<p>Welcome to my website, a place where I write about trends, web development, economics, and more.</p>
+<p>I am a Full Stack Developer living in Hakuba, Japan, specializing in building websites, applications, and everything in between. Stack I commonly use are Node Js or Laravel for bankend, and React Js or plain Javascript for frontend.</p>
+<p>Besides from a passion for building, I enjoy cooking, cycling, and discovering new podcasts. On the podcast front, my recent find is dunctank, created by Duncan Gammien. If you enjoy insightful interviews with experts across industries, then this show might be your cup of tea.</p>
+<p>Here's what I am doing currently.</p>
+<p>Developing next phase to my candlestyle search engine.
+Updating this homepage, so I have a proper presence on the interwebs.
+Contemplating if I should make a dedicated &quot;now page&quot;. Learn more about what a now page is here.
+Trying to be a better dad, and better self .</p>
+<p><a href="https://www.snowmonkeyresorts.com/guides/">my profile at Snow Monkey Resorts</a></p>
+<h1>2020 in photos</h1>
+<img src="/assets/IMG_0099 2.JPG" class=" pr3 pb3">
+<img src="/assets/IMG_0369.JPG" class="w-third pr3 pb3">
+<img src="/assets/stairs.png" class="w-third pr3 pb3">
+<img src="/assets/IMG_0431.JPG" class="w-30 pr3 pb3">
+<img src="/assets/IMG_0465 2.JPG" class="w-30 pr3 pb3">
+<img src="/assets/IMG_0556.JPG" class="w-30 pr3 pb3">
+<img src="/assets/IMG_0618.JPG" class="w-30 pr3 pb3">
+<img src="/assets/IMG_0619.PNG" class="w-30 pr3 pb3">
+<img src="/assets/IMG_7372.JPG" class="w-30 pr3 pb3">
+</div>
 
-
-
-
-
-.ball {
-  width: 50px;
-  height: 50px;
-  opacity: 0.5;
-  background: rgb(255,140,105);
-  background: radial-gradient(at 30% 30%,  rgba(251,199,199,1), rgba(255,140,105,1));
-
-  border-radius: 50%;
-  margin: 0 auto 0 25px;
-  
-  animation: bounce 2s cubic-bezier(.755, .05, .855, .06) forwards,
-             roll 3s 2.05s ease forwards;
-}
-
-
-	html {
-	  height: 100%;
-	}
-	body {
-	  min-height: 100%;
-	}
-
-	nav a{
-		color: black;
-		text-decoration: none;
-		display: block;
-	}
-
-
-	.bg-my-pink{
-		background: rgb(249,239,231);
-	}
-
-	.bg-my-hot-pink{
-		background: rgb(255,231,221);
-	}
-
-	.bg-my-brown{
-		background-color: rgb(164,144,93);
-	}
-
-	.bg-my-red{
-		background-color: rgb(255,140,105);
-	}
-
-	.bg-my-grey{
-		background-color: rgb(249,249,250);
-	}
-    code{
-		color: darkblue;
-		margin-right: 5px;
-		text-transform: capitalize;   	
-		text-decoration: underline;
-		margin-left: 6px;
-    }
-</style>
-<body class="helvetica " style="height: 100%" >
-	<section class="cf" style="height: 100%">
-		<div class="fl w-100 w-50-m w-25-l  lh-copy	 tr pa4 ">
-			<nav>
-			<p class=""><a href="/">SIJUNG LAI</a></p>
-			<a href="/">About</a> 
-			<a href="/projects">Projects</a> 
-			<a class="dn" href="/micro">Microblog</a> 
-			<a href="/resume">CV</a>
-			</nav>
-		</div>
-
-<div class="ball dn"></div>
-  <div class="fl w-100 w-50-m w-75-l bg-my-pink pa4" style="h1eight: 100%">
-	
-  	<h1>About</h1>
-	<div class=" lh-copy measure">
-<p>Welcome!  My name is Sijung.</p>
-
-<p>I am a Full Stack Developer living in Hakuba, Japan, specializing in building websites, applications, and everything in between.  Stack I commonly use are <code>Node Js</code> or <code>Laravel</code> for bankend, and <code>React js</code> or plain <code>javascript</code> for frontend.
-</p>
-<p>
-Besides from a passion for building, I enjoy cooking, cycling, and discovering new podcasts.  On the podcast front, my recent find is <a href="http://dunctank.com/">dunctank<a>, created by Duncan Gammien.  If you enjoy insightful interviews with expert acorss industries, then this show might be your cup of tea.
-</p>
-<p>
-Here's what I am doing currently.  
-	<ul>
-		<li>Developing next phase to my <a href="/projects/">candlestyle search engine</a>.</li>
-		<li>Updating this homepage, so I have a proper presence on the interwebs.</li>
-		<li>Contemplating if I should make a dedicated "now page".  Learn more about what a now page is <a href="https://nownownow.com/about">here</a>. </li>
-		<li>Trying to be a better dad, and better self.</li>
-	</ul>
-</p>
-
-
-	</div> 
-  </div>
-
-</section>
-</body>
+                        </article>
+                    
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <title>Contact Me</title>
+    <style>
+        body{max-width: 1600px; margin: auto; fodnt-size: 15px;
+        }
+        body, #right {
+            height: 100%;
+            overflow-wrap: break-word;
+        }
+
+        a{
+            color: black;
+            border-bottom: 1px solid #808000;
+            text-decoration: none;
+        }
+
+        h1,h2,h3,h4, b{
+            1color: rgb(17,133,22);
+        }
+
+        #links a{
+            text-decoration: none;
+            text-transform: lowercase;
+            color: black;
+            font-weight: 800;
+            border-bottom: 0px solid red;
+        }
+
+        a:hover, #links a:hover{
+            color: #b8860b;
+
+        }
+        #contendt{font-family: "Source Serif Pro",TimesNewRoman,Times New Roman,Times,serif}
+    </style>  
+</head>
+<html>
+    <body class="">
+        <main class="cf lh-copy">
+            <div class="fl w-100 w-20-l sans-serif  pv4 ph3">
+                <b class="db pv2 bt bw2 ttu">Sijung Lai <br> シオン ライ</b>
+                <div class="pt6-l pt2 pb2 bb black-50">web programmer you can trust</div>
+                <div id="links" class="pt2 ">
+                    <a id="home" class="  fl w-25 db pv2 w-100-l" href="/">home</a> 
+                    <a id="blog" class="fl w-25  db pv2 w-100-l" href="/blog">blog</a> 
+                    <a id="map" class="fl w-25  db pv2 w-100-l" href="/map">map</a> 
+                    <a id="contact" class="fl  w-25 db pv2 w-100-l" href="/contact">contact</a>  
+                </div>
+            </div>
+            <div id="right" class="fl w-100 w-80-l bg-black-05  pv4 ph3 sans-serif" >
+                <div id="content">
+                    
+                        <article class="pa4-l center w-80-l w-100" >
+                            <b class="db  f1-l f3 pb6-l pv4 lh-title ttu ">Contact Me</b>
+                            <style>
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mobilesOnly {visibility:hidden;}
+
+</style>
+
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content tc">
+    <span class="close">&times;</span>
+    <h1>Line QR Code</h1>
+    <p>For those who use line.  You contact me via Line. 👇</p>
+    <img src="https://athenaod.com/wp-content/uploads/2017/03/Line@-QR-code-1.jpg" 
+    class="w-100 w-40-l ">
+  </div>
+
+</div>
+
+
+<div id="contact" class="measure-wide lh-copy">
+
+Interested in hiring a full stack developers, or just want to say hi.  All are welcome.  Below is my contact information:
+
+
+    <ul class="w-100 pv5">
+        <li> Email: sijung.nagano@outlook.com </li>
+        <li> GitHub: @sijungcodes</li>
+        <li> Line id: sijung <br>
+        <b id="myBtn" class="no-underline near-white bg-animate bg-near-black hover-bg-gray inline-flex items-center ma2 tc br2 pa2" href="https://facebook.com" title="Facebook">
+        <span class="f6 ml3 pr2">Line Qr Code</span></b>
+        </li>
+    </ul>
+    If you reside in Japan, and want to contact me the traditional way via phone. 
+    Here is an image of my namecard.  My phone number is circled in green. 
+
+    <img src="/assets/namecard_1.JPG" class="w-100 pv5">
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+                        </article>
+                    
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

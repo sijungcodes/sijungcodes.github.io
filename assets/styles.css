@@ -1,0 +1,38 @@
+.sans-serif {
+    font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
+
+.serif {
+    font-family: georgia, times, serif;
+}
+
+// Pattern styles
+.my-container {
+    display: table;
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+
+.left-half,
+.right-half {}
+
+.left-half {
+    background: red;
+    color: #000;
+    height: 400px;
+    width: 12%;
+    float: left;
+}
+
+.right-half {
+    background: black;
+    color: #000;
+    height: 400px;
+    width: 88%;
+    float: right;
+}
+
+@media screen and (min-width: 400px) {}
+
+@media screen and (min-width: 800px) {}
