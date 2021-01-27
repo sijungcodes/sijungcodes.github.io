@@ -6,60 +6,24 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
     <title>home</title>
     <style>
-        body{max-width: 1600px; margin: auto; fodnt-size: 15px;
-        }
-        body, #right {
-            height: 100%;
-            overflow-wrap: break-word;
-        }
+        body{background-colodr: rgb(34,31,43);  max-width: 1080px; margin: auto;}
 
-        a{
-            color: black;
-            border-bottom: 1px solid #808000;
-            text-decoration: none;
-        }
-
-        h1,h2,h3,h4, b{
-            1color: rgb(17,133,22);
-        }
-
-        #links a{
-            text-decoration: none;
-            text-transform: lowercase;
-            color: black;
-            font-weight: 800;
-            border-bottom: 0px solid red;
-        }
-
-        a:hover, #links a:hover{
-            color: #b8860b;
-
-        }
-        #contendt{font-family: "Source Serif Pro",TimesNewRoman,Times New Roman,Times,serif}
+        a{ color: white;}
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2.25rem; }
+        h3 { font-size: 1.5rem; }
     </style>  
 </head>
-<html>
-    <body class="">
-        <main class="cf lh-copy">
-            <div class="fl w-100 w-20-l sans-serif  pv4 ph3">
-                <b class="db pv2 bt bw2 ttu">Sijung Lai <br> シオン ライ</b>
-                <div class="pt6-l pt2 pb2 bb black-50">web programmer you can trust</div>
-                <div id="links" class="pt2 ">
-                    <a id="home" class="  fl w-25 db pv2 w-100-l" href="/">home</a> 
-                    <a id="blog" class="fl w-25  db pv2 w-100-l" href="/blog">blog</a> 
-                    <a id="map" class="fl w-25  db pv2 w-100-l" href="/map">map</a> 
-                    <a id="contact" class="fl  w-25 db pv2 w-100-l" href="/contact">contact</a>  
-                </div>
-            </div>
-            <div id="right" class="fl w-100 w-80-l bg-black-05  pv4 ph3 sans-serif" >
-                <div id="content">
-                    
- 
-                        <article class="pa4-l center w-80-l w-100" >
-                            <b class=" db   f1-l  f2 pb6-l pv4 lh-title ">
-                                Hi, I'm Sijung, a web programmer living in Hakuba, Japan.
-                            </b>                     
-                             <style>
+<body class="sans-serif white bg-black pa4"> 
+   
+    <div class="pb4 h4">
+        <a  class="db fl link pv2" href="/">
+            SIJUNG LAI <br> シオン ライ
+        </a>
+        <a class="fr br-pill b--white bg-white-20  link ph4 pv2 fw4" href="/about">about</a>
+    </div>
+    <div class="pb4 lh-copy ">
+         <style>
 img {
   -webkit-filter: acontrast(66500%);
   filter: acontrast(66500%);
@@ -68,32 +32,29 @@ img {
  
 
  </style>
-<div id="me" class="measdure-wide">
-<p>Welcome to my website, a place where I write about trends, web development, economics, and more.</p>
-<p>I am a Full Stack Developer living in Hakuba, Japan, specializing in building websites, applications, and everything in between. Stack I commonly use are Node Js or Laravel for bankend, and React Js or plain Javascript for frontend.</p>
-<p>Besides from a passion for building, I enjoy cooking, cycling, and discovering new podcasts. On the podcast front, my recent find is dunctank, created by Duncan Gammien. If you enjoy insightful interviews with experts across industries, then this show might be your cup of tea.</p>
-<p>Here's what I am doing currently.</p>
-<p>Developing next phase to my candlestyle search engine.
-Updating this homepage, so I have a proper presence on the interwebs.
-Contemplating if I should make a dedicated &quot;now page&quot;. Learn more about what a now page is here.
-Trying to be a better dad, and better self .</p>
-<p><a href="https://www.snowmonkeyresorts.com/guides/">my profile at Snow Monkey Resorts</a></p>
-<h1>2020 in photos</h1>
-<img src="/assets/IMG_0099 2.JPG" class=" pr3 pb3">
-<img src="/assets/IMG_0369.JPG" class="w-third pr3 pb3">
-<img src="/assets/stairs.png" class="w-third pr3 pb3">
-<img src="/assets/IMG_0431.JPG" class="w-30 pr3 pb3">
-<img src="/assets/IMG_0465 2.JPG" class="w-30 pr3 pb3">
-<img src="/assets/IMG_0556.JPG" class="w-30 pr3 pb3">
-<img src="/assets/IMG_0618.JPG" class="w-30 pr3 pb3">
-<img src="/assets/IMG_0619.PNG" class="w-30 pr3 pb3">
-<img src="/assets/IMG_7372.JPG" class="w-30 pr3 pb3">
+<div id="me" class="measure-widse">
+<h2>Hi, I'm Sijung</h2>
+<p>I'm a full Stack Developer living in Hakuba, Japan.  I love building stuff.</p>
+<p>Here’s the spec sheet for my current tech stack:</p>
+<ul>
+<li>Node js, Express</li>
+<li>PHP, Laravel</li>
+<li>Javascript, React</li>
+<li>CSS, Bootstrap</li>
+<li>Git, npm, symphony, linux</li>
+<li>Static site generator, Eleventy (11ty)</li>
+</ul>
 </div>
 
-                        </article>
-                    
-                </div>
-            </div>
-        </main>
-    </body>
+    </div>  
+
+    <footer class=" pb6 bt b--black-10  ">
+        <img class="db pv4" src="/assets/icon/GitHub-Mark-Light-64px.png">
+        <a class="link b f4 f3-ns dim   lh-solid"> https://github.com/sijungcodes</a>
+        <img class="db h4 pv4" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/38125791_1275114069292189_4057929536992444416_n.jpg?_nc_cat=105&ccb=2&_nc_sid=730e14&_nc_ohc=JUHPi_ClOMkAX8KdxEH&_nc_ht=scontent-lax3-1.xx&oh=5750122244a129cec3a3f6081589d202&oe=60315EE0">
+        <a href="mailto:sijung.nagano@outlook.com" class="link b  f4 f3-ns dim lh-solid">sijung.nagano@outlook.com</a>
+        <p class="f6 db b ttu lh-solid">© 2021 Sijung Lai</p>
+    </footer>
+
+</body>
 </html>
